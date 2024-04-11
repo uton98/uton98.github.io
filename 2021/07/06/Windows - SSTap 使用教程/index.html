@@ -1,0 +1,129 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="theme-color" content="#0078E7"><meta name="author" content="uTon"><meta name="copyright" content="uTon"><meta name="generator" content="Hexo 5.4.0"><meta name="theme" content="hexo-theme-yun"><title>Windows - SSTap 使用教程 | 麻将是我的一生之敌-</title><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&amp;display=swap" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/star-markdown-css@0.1.24/dist/yun/yun-markdown.min.css"><script src="//at.alicdn.com/t/font_1140697_j5gk85dg4pf.js" async></script><script src="https://cdn.jsdelivr.net/npm/scrollreveal/dist/scrollreveal.min.js" defer></script><script>document.addEventListener("DOMContentLoaded", () => {
+  [".post-card",".post-content img"].forEach((target)=> {
+    ScrollReveal().reveal(target);
+  })
+});
+</script><script src="https://cdn.jsdelivr.net/npm/pjax@latest/pjax.min.js" defer></script><script src="/js/pjax.js" defer></script><script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script><link id="light-prism-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism.css" media="(prefers-color-scheme: light)"><link id="dark-prism-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@latest/themes/prism-tomorrow.css" media="(prefers-color-scheme: dark)"><link rel="icon" href="/yun.svg"><link rel="mask-icon" href="/yun.svg" color="#0078E7"><link rel="alternate icon" href="/yun.ico"><link rel="preload" href="/css/hexo-theme-yun.css" as="style"><link rel="preload" href="/js/utils.js" as="script"><link rel="preload" href="/js/hexo-theme-yun.js" as="script"><link rel="prefetch" href="/js/sidebar.js" as="script"><link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin><script id="yun-config">
+    const Yun = window.Yun || {};
+    window.CONFIG = {"hostname":"yoursite.com","root":"/","title":"再也不打麻将","version":"1.6.1","mode":"dark","copycode":true,"page":{"isPost":true},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}.","hits":"${hits} results found","hits_time":"${hits} results found in ${time} ms"},"anonymous_image":"https://cdn.jsdelivr.net/gh/YunYouJun/cdn/img/avatar/none.jpg","fireworks":{"colors":["102, 167, 221","62, 131, 225","33, 78, 194"]}};
+  </script><link rel="stylesheet" href="/css/hexo-theme-yun.css"><script src="/js/utils.js"></script><script src="/js/hexo-theme-yun.js"></script><script>(function(){
+  var bp = document.createElement('script');
+  var curProtocol = window.location.protocol.split(':')[0];
+  if (curProtocol === 'https') {
+    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+  }
+  else {
+    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+  }
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(bp, s);
+})();</script><meta name="description" content="简介SSTap 全称 SOCKSTap, 是一款利用虚拟网卡技术在网络层实现的代理工具。SSTap 能在网络层拦截所有连接并转发给 HTTP, SOCKS4&#x2F;5, SHADOWSOCKS(R) 代理，而无需对被代理的应用程序做任何修改或设置。它能同时转发 TCP, UDP 数据包，非常适合于游戏玩家使用。 这是一个免费的工具，仅有应用内常驻非弹出式广告，并不会影响使用体验。（也有第三方去广告版本）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Windows - SSTap 使用教程">
+<meta property="og:url" content="http://yoursite.com/2021/07/06/Windows%20-%20SSTap%20%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/index.html">
+<meta property="og:site_name" content="麻将是我的一生之敌-">
+<meta property="og:description" content="简介SSTap 全称 SOCKSTap, 是一款利用虚拟网卡技术在网络层实现的代理工具。SSTap 能在网络层拦截所有连接并转发给 HTTP, SOCKS4&#x2F;5, SHADOWSOCKS(R) 代理，而无需对被代理的应用程序做任何修改或设置。它能同时转发 TCP, UDP 数据包，非常适合于游戏玩家使用。 这是一个免费的工具，仅有应用内常驻非弹出式广告，并不会影响使用体验。（也有第三方去广告版本）">
+<meta property="og:locale">
+<meta property="og:image" content="https://i.loli.net/2019/11/21/A2dqpfG9US8Bikl.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/11/21/IaxDXf73VihpvAF.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/11/19/DQW4F9cxRVCYeKa.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/11/19/CQtSvhyK54wuYmH.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/11/19/txF9bo21RzTi6Yy.png">
+<meta property="og:image" content="https://i.loli.net/2019/11/19/1isgGkJwMeT9qyc.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/11/19/FB2HDIeMpPyTN3x.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/11/19/kR9N6y7tfa8xWFJ.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/11/19/ZBO65lW9Vxhj3Jt.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/11/19/KgpZHP4C59AzRJx.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/11/19/4kFhRcdEwgpuX91.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/11/19/ZRo8MvUI5KtpxS9.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/11/19/LUeyRSZngOT9adx.jpg">
+<meta property="article:published_time" content="2021-07-06T10:22:46.000Z">
+<meta property="article:modified_time" content="2021-07-07T21:44:31.601Z">
+<meta property="article:author" content="uTon">
+<meta property="article:tag" content="SSR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2019/11/21/A2dqpfG9US8Bikl.jpg"><script src="/js/ui/mode.js"></script></head><body><script defer src="https://cdn.jsdelivr.net/npm/animejs@latest"></script><script defer src="/js/ui/fireworks.js"></script><canvas class="fireworks"></canvas><div class="container"><a class="sidebar-toggle hty-icon-button" id="menu-btn"><div class="hamburger hamburger--spin" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></div></a><div class="sidebar-toggle sidebar-overlay"></div><aside class="sidebar"><script src="/js/sidebar.js"></script><ul class="sidebar-nav"><li class="sidebar-nav-item sidebar-nav-toc hty-icon-button sidebar-nav-active" data-target="post-toc-wrap" title="Table of Contents"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-list-ordered"></use></svg></li><li class="sidebar-nav-item sidebar-nav-overview hty-icon-button" data-target="site-overview-wrap" title="Overview"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-passport-line"></use></svg></li></ul><div class="sidebar-panel" id="site-overview-wrap"><div class="site-info fix-top"><a class="site-author-avatar" href="/about/" title="uTon"><img width="96" loading="lazy" src="/images/avatar.jpg" alt="uTon"></a><div class="site-author-name"><a href="/about/">uTon</a></div><span class="site-name">麻将是我的一生之敌-</span><sub class="site-subtitle">All at sea.</sub><div class="site-desciption">希望能成为一个有趣的人</div></div><nav class="site-state"><a class="site-state-item hty-icon-button icon-home" href="/" title="Home"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-home-4-line"></use></svg></span></a><div class="site-state-item"><a href="/archives/" title="Archives"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-archive-line"></use></svg></span><span class="site-state-item-count">10</span></a></div><div class="site-state-item"><a href="/categories/" title="Categories"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-2-line"></use></svg></span><span class="site-state-item-count">3</span></a></div><div class="site-state-item"><a href="/tags/" title="Tags"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="site-state-item-count">2</span></a></div><a class="site-state-item hty-icon-button" target="_blank" rel="noopener" href="https://yun.yunyoujun.cn/en/guide/" title="文档"><span class="site-state-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-settings-line"></use></svg></span></a></nav><hr style="margin-bottom:0.5rem"><div class="links-of-author"><a class="links-of-author-item hty-icon-button" rel="noopener" href="https://music.163.com/#/user/home?id=317989143" title="网易云音乐" target="_blank" style="color:#C20C0C"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-netease-cloud-music-line"></use></svg></a></div><hr style="margin:0.5rem 1rem"><div class="links"><a class="links-item hty-icon-button" href="/albums/" title="ACG图库" style="color:dodgerblue"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-genderless-line"></use></svg></a></div></div><div class="sidebar-panel sidebar-panel-active" id="post-toc-wrap"><div class="post-toc"><div class="post-toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85"><span class="toc-number">2.</span> <span class="toc-text">下载安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B"><span class="toc-number">3.</span> <span class="toc-text">快速上手</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B7%BB%E5%8A%A0%E8%8A%82%E7%82%B9"><span class="toc-number">3.1.</span> <span class="toc-text">添加节点</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%9A%E8%BF%87%E7%BB%BF%E8%89%B2%E5%8A%A0%E5%8F%B7%E6%B7%BB%E5%8A%A0%E8%8A%82%E7%82%B9%EF%BC%9A"><span class="toc-number">3.1.1.</span> <span class="toc-text">通过绿色加号添加节点：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%9A%E8%BF%87%E8%AE%A2%E9%98%85%E9%93%BE%E6%8E%A5%E6%B7%BB%E5%8A%A0%EF%BC%88%E5%BC%BA%E7%83%88%E6%8E%A8%E8%8D%90%EF%BC%89%EF%BC%9A"><span class="toc-number">3.1.2.</span> <span class="toc-text">通过订阅链接添加（强烈推荐）：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%80%89%E6%8B%A9%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F"><span class="toc-number">3.2.</span> <span class="toc-text">选择代理模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8-SSTap"><span class="toc-number">3.3.</span> <span class="toc-text">启动 SSTap</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9B%B4%E5%A4%9A"><span class="toc-number">4.</span> <span class="toc-text">更多</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%8E%E6%A0%B7%E7%A1%AE%E8%AE%A4%E8%87%AA%E5%B7%B1%E6%98%AF%E5%90%A6%E8%BF%9E%E6%8E%A5%E6%88%90%E5%8A%9F%EF%BC%9F%E6%80%8E%E6%A0%B7%E5%88%A4%E6%96%AD%E6%98%AF%E5%90%A6%E5%88%86%E6%B5%81%E6%88%90%E5%8A%9F%EF%BC%9F"><span class="toc-number">4.1.</span> <span class="toc-text">怎样确认自己是否连接成功？怎样判断是否分流成功？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%90%86%E7%94%9F%E6%95%88%E4%BA%86%EF%BC%8C%E4%BD%86%E5%B0%B1%E6%98%AF%E8%BF%9B%E4%B8%8D%E5%8E%BB%E6%B8%B8%E6%88%8F%EF%BC%9F"><span class="toc-number">4.2.</span> <span class="toc-text">代理生效了，但就是进不去游戏？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F%E7%A7%8D%E6%B2%A1%E6%9C%89%E6%88%91%E6%83%B3%E7%8E%A9%E7%9A%84%E6%B8%B8%E6%88%8F%EF%BC%9F"><span class="toc-number">4.3.</span> <span class="toc-text">代理模式种没有我想玩的游戏？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Win10-%E5%BC%80%E5%90%AF%E4%BB%A3%E7%90%86%E5%90%8E-CPU-%E5%8D%A0%E7%94%A8%E5%BE%88%E9%AB%98"><span class="toc-number">4.4.</span> <span class="toc-text">Win10 开启代理后 CPU 占用很高</span></a></li></ol></li></ol></div></div></div></aside><main class="sidebar-translate" id="content"><div id="post"><article class="hty-card post-block" itemscope itemtype="https://schema.org/Article"><link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/07/06/Windows%20-%20SSTap%20%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"><span hidden itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="uTon"><meta itemprop="description"></span><span hidden itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><meta itemprop="name" content="麻将是我的一生之敌-"></span><header class="post-header"><h1 class="post-title" itemprop="name headline">Windows - SSTap 使用教程</h1><div class="post-meta"><div class="post-time" style="display:inline-block"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-calendar-line"></use></svg></span> <time title="Created: 2021-07-06 18:22:46" itemprop="dateCreated datePublished" datetime="2021-07-06T18:22:46+08:00">2021-07-06</time></div><div class="post-classify"><span class="post-category"> <span class="post-meta-item-icon" style="margin-right:3px;"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-folder-line"></use></svg></span><span itemprop="about" itemscope itemtype="https://schema.org/Thing"><a class="category-item" href="/categories/SSR%E6%95%99%E7%A8%8B/" style="--text-color:var(--hty-text-color)" itemprop="url" rel="index"><span itemprop="text">SSR教程</span></a></span></span><span class="post-tag"><span class="post-meta-divider">-</span><a class="tag-item" href="/tags/SSR/" style="--text-color:var(--hty-text-color)"><span class="post-meta-item-icon"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-price-tag-3-line"></use></svg></span><span class="tag-name">SSR</span></a></span></div></div></header><section class="post-body" itemprop="articleBody"><div class="post-content markdown-body" style="--smc-primary:#0078E7;"><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>SSTap 全称 SOCKSTap, 是一款利用虚拟网卡技术在网络层实现的代理工具。SSTap 能在网络层拦截所有连接并转发给 HTTP, SOCKS4/5, SHADOWSOCKS(R) 代理，而无需对被代理的应用程序做任何修改或设置。它能同时转发 TCP, UDP 数据包，非常适合于游戏玩家使用。</p>
+<p>这是一个免费的工具，仅有应用内常驻非弹出式广告，并不会影响使用体验。（也有第三方去广告版本）</p>
+<p>作者声称硬盘损坏，数据丢失，现已停止开发。所以后续不会再有更新了，未来也许会不可用。</p>
+<p>整理教程时的系统环境：</p>
+<p>Windows 10 1903 SSTap KYO （去广告免安装版）</p>
+<blockquote>
+<p>此文档适用于：<code>uTon</code></p>
+</blockquote>
+<p>文档中的某些内容可能随时间变化而失效。</p>
+<span id="more"></span>
+
+<h2 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h2><p>各历史版本收藏：<a target="_blank" rel="noopener" href="https://github.com/solikethis/SSTap-backup">https://github.com/solikethis/SSTap-backup</a></p>
+<p>若您不清楚如何在 Github 下载软件，可参考下图：</p>
+<ul>
+<li><p><strong>下载单个文件:</strong> 点击想要下载的版本 → 点击右侧的 <strong>Download</strong></p>
+<p><img src="https://i.loli.net/2019/11/21/A2dqpfG9US8Bikl.jpg" alt="下载单个版本.jpg" loading="lazy"></p>
+<p>下载单个版本.jpg</p>
+</li>
+<li><p><strong>下载所有文件：</strong>点击绿色的 <strong>Clone or Download</strong> → 选择 <strong>Download ZIP</strong> 即可打包下载所有文件。</p>
+<p><img src="https://i.loli.net/2019/11/21/IaxDXf73VihpvAF.jpg" alt="下载全部.jpg" loading="lazy"></p>
+<p>下载全部.jpg</p>
+</li>
+</ul>
+<p><strong>软件官网：</strong> <a target="_blank" rel="noopener" href="https://www.sockscap64.com/">https://www.sockscap64.com/</a></p>
+<p>第一次安装的话会弹出提示安装一个虚拟网卡驱动， 这是因为 SSTap 需要使用 OpenVPN 的 TAP 设备驱动来创建虚拟网卡以实现类似 VPN 的效果。 点击“安装”即可。</p>
+<p><img src="https://i.loli.net/2019/11/19/DQW4F9cxRVCYeKa.jpg" alt="SSTAP安装虚拟网卡.jpg" loading="lazy"></p>
+<p>SSTAP安装虚拟网卡.jpg</p>
+<p>仅推荐 <strong>1.0.9.7 版本</strong> 及 <strong>KYO 去广告版本</strong>，不推荐最新的版本（1.1.0.1），因为限制了网页/浏览器加速功能。</p>
+<p>如果 使用的是免安装版本，运行时提示没有 TAP 适配器或无法运行，可以直接安装 <a target="_blank" rel="noopener" href="https://build.openvpn.net/downloads/releases/latest/tap-windows-latest-stable.exe">Tap-Windows</a> 适配器。 或者通过安装 <a target="_blank" rel="noopener" href="https://openvpn.net/community-downloads/">OpenVPN</a> 的方式获得该适配器。 也可以直接使用安装版 SSTap 。</p>
+<p>SSTap 本身使用了版本较旧的 .NET Framework 且使用的代码写法已经过时，因此不支持 TLSv1.0 以上的版本。</p>
+<h2 id="快速上手"><a href="#快速上手" class="headerlink" title="快速上手"></a>快速上手</h2><p>以 KYO (1.0.9.7) 去广告版本为例。此版本直接双击运行主程序即可。</p>
+<p><img src="https://i.loli.net/2019/11/19/CQtSvhyK54wuYmH.jpg" alt="免安装版本直接双击运行.jpg" loading="lazy"></p>
+<p>免安装版本直接双击运行.jpg</p>
+<p><img src="https://i.loli.net/2019/11/19/txF9bo21RzTi6Yy.png" alt="SSTap主界面.png" loading="lazy"></p>
+<p>SSTap主界面.png</p>
+<h3 id="添加节点"><a href="#添加节点" class="headerlink" title="添加节点"></a>添加节点</h3><p>SSTap 添加节点主要有两个入口：<strong>“代理”右边的绿色加号 &amp; 右下角的小齿轮</strong></p>
+<h4 id="通过绿色加号添加节点："><a href="#通过绿色加号添加节点：" class="headerlink" title="通过绿色加号添加节点："></a>通过绿色加号添加节点：</h4><p><img src="https://i.loli.net/2019/11/19/1isgGkJwMeT9qyc.jpg" alt="SSTap添加节点.jpg" loading="lazy"></p>
+<p>SSTap添加节点.jpg</p>
+<ul>
+<li><p>SOCKS5</p>
+<p>如果你是使用 SS/SSR 代理，那么建议直接使用下面的 SS/SSR 代理添加，不推荐使用 SOCKS5 去 连接 SS/SSR 的 SOCKS5 本地端口，因为这样的话你还需要额外将 SS/SSR 的服务器 IP 添加到代理 排除列表中，十分麻烦。 如果你是在路由器里挂的仅 ss-local 那么就当然可以这样做。</p>
+</li>
+<li><p>SS/SSR</p>
+<p>手动输入你的 SS/SSR 服务器的参数。 SSR 支持目前新的chain_a和chain_b协议。</p>
+</li>
+<li><p>通过 SS/SSR 链接批量添加（推荐） 十分懒人，复制链接进去一键添加。</p>
+</li>
+</ul>
+<h4 id="通过订阅链接添加（强烈推荐）："><a href="#通过订阅链接添加（强烈推荐）：" class="headerlink" title="通过订阅链接添加（强烈推荐）："></a>通过订阅链接添加（强烈推荐）：</h4><p>请复制上级发给你的 SSR 订阅链接。</p>
+<p>点击右下角的小齿轮按钮，这个按钮是设置按钮。</p>
+<p><img src="https://i.loli.net/2019/11/19/FB2HDIeMpPyTN3x.jpg" alt="SSTAP小齿轮.jpg" loading="lazy"></p>
+<p>SSTAP小齿轮.jpg</p>
+<p>在弹出的菜单中选择 <strong>“SSR 订阅”</strong> – <strong>“SSR 订阅管理”</strong></p>
+<p>在新的窗口中，将提前复制好的订阅链接粘贴到 <strong>“URL”</strong> 中，然后点击 <strong>“添加”</strong>。</p>
+<p><img src="https://i.loli.net/2019/11/19/kR9N6y7tfa8xWFJ.jpg" alt="SSTap添加订阅.jpg" loading="lazy"></p>
+<p>SSTap添加订阅.jpg</p>
+<p>添加成功后如图所示：</p>
+<p><img src="https://i.loli.net/2019/11/19/ZBO65lW9Vxhj3Jt.jpg" alt="SSTap添加订阅2.jpg" loading="lazy"></p>
+<p>SSTap添加订阅2.jpg</p>
+<p>“频率”是指节点订阅链接自动更新的频率。视个人喜好设定。</p>
+<p>关闭订阅管理窗口。稍等若干秒，等待同步节点信息。</p>
+<p>订阅成功后如图所示：</p>
+<p><img src="https://i.loli.net/2019/11/19/KgpZHP4C59AzRJx.jpg" alt="SSTap订阅成功.jpg" loading="lazy"></p>
+<p>SSTap订阅成功.jpg</p>
+<h3 id="选择代理模式"><a href="#选择代理模式" class="headerlink" title="选择代理模式"></a>选择代理模式</h3><p>节点添加完毕后，在 <strong>“代理”</strong> 中选择所需的接入点，然后在 <strong>“模式”</strong> 中选择所需的模式，非游戏用户的话，一般我们选择 <strong>“不代理中国 IP”</strong>，此模式会自动分流（指国内服务不会被代理）。 游戏用户请自行选择要加速的游戏。</p>
+<p><img src="https://i.loli.net/2019/11/19/4kFhRcdEwgpuX91.jpg" alt="SSTap选择模式.jpg" loading="lazy"></p>
+<p>SSTap选择模式.jpg</p>
+<h3 id="启动-SSTap"><a href="#启动-SSTap" class="headerlink" title="启动 SSTap"></a>启动 SSTap</h3><p>选择代理模式之后，点击 <strong>“连接”</strong> 即可通过 SSTap 连接到代理服务器，助力电脑出国留学。连接成功后 SSTap 会自动最小化。</p>
+<p>在连接之前可以先点击 <strong>“代理”</strong> 这一栏最右侧的闪电标志来进行延迟测试，以检测节点是否可用。</p>
+<p><img src="https://i.loli.net/2019/11/19/ZRo8MvUI5KtpxS9.jpg" alt="SSTap测试延迟.jpg" loading="lazy"></p>
+<p>SSTap测试延迟.jpg</p>
+<h2 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h2><h3 id="怎样确认自己是否连接成功？怎样判断是否分流成功？"><a href="#怎样确认自己是否连接成功？怎样判断是否分流成功？" class="headerlink" title="怎样确认自己是否连接成功？怎样判断是否分流成功？"></a>怎样确认自己是否连接成功？怎样判断是否分流成功？</h3><p>可以访问此网站： <a target="_blank" rel="noopener" href="https://ip.skk.moe/">https://ip.skk.moe/</a></p>
+<p>得到如图所示的结果：</p>
+<p><img src="https://i.loli.net/2019/11/19/LUeyRSZngOT9adx.jpg" alt="检查IP.jpg" loading="lazy"></p>
+<p>检查IP.jpg</p>
+<p>正常情况下，从国内查IP应显示你当前的IP地址。从国外查询应当显示你所连接的节点的出口IP地址。</p>
+<p>千万不要再用百度查询IP了，原因就不展开了。</p>
+<h3 id="代理生效了，但就是进不去游戏？"><a href="#代理生效了，但就是进不去游戏？" class="headerlink" title="代理生效了，但就是进不去游戏？"></a>代理生效了，但就是进不去游戏？</h3><p>可能性大概有两种：</p>
+<ul>
+<li>节点IP不符合游戏的要求：此时更换节点尝试即可。</li>
+<li>未开启 UDP 转发：请点击 <strong>“设置”</strong> ，将 <strong>“不转发UDP”</strong> 取消勾选。并取消勾选 <strong>“代理DNS服务器”</strong>。然后手动选择一个国内的 <strong>“预选DNS”</strong>。</li>
+</ul>
+<h3 id="代理模式种没有我想玩的游戏？"><a href="#代理模式种没有我想玩的游戏？" class="headerlink" title="代理模式种没有我想玩的游戏？"></a>代理模式种没有我想玩的游戏？</h3><p>请参考 Github 项目： <a target="_blank" rel="noopener" href="https://github.com/FQrabbit/SSTap-Rule">https://github.com/FQrabbit/SSTap-Rule</a></p>
+<h3 id="Win10-开启代理后-CPU-占用很高"><a href="#Win10-开启代理后-CPU-占用很高" class="headerlink" title="Win10 开启代理后 CPU 占用很高"></a>Win10 开启代理后 CPU 占用很高</h3><p>这是由 Windows 10 的一个网络检测服务所致，SSTap 虚拟网卡创建的连接被误认为是受限网络，从而触发了检测。无需理会，数分钟以后会恢复正常。</p>
+</div><div id="reward-container"><span class="hty-icon-button button-glow" id="reward-button" title="Donate" onclick="var qr = document.getElementById(&quot;qr&quot;); qr.style.display = (qr.style.display === &quot;none&quot;) ? &quot;block&quot; : &quot;none&quot;;"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-hand-coin-line"></use></svg></span><div id="reward-comment">I'm so cute. Please give me money.</div><div id="qr" style="display:none;"><div style="display:inline-block"><a target="_blank" rel="noopener" href="https://i.loli.net/2021/07/06/gK4Wvo1CtarlDTb.png"><img loading="lazy" src="https://i.loli.net/2021/07/06/gK4Wvo1CtarlDTb.png" alt="微信支付" title="微信支付"></a><div><span style="color:#2DC100"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-wechat-pay-line"></use></svg></span></div></div></div></div><ul class="post-copyright"><li class="post-copyright-author"><strong>Post author: </strong>uTon</li><li class="post-copyright-link"><strong>Post link: </strong><a href="http://yoursite.com/2021/07/06/Windows%20-%20SSTap%20%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" title="Windows - SSTap 使用教程">http://yoursite.com/2021/07/06/Windows%20-%20SSTap%20%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</a></li><li class="post-copyright-license"><strong>Copyright Notice: </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="noopener" title="CC BY-NC-SA 4.0 "><svg class="icon"><use xlink:href="#icon-creative-commons-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-by-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-nc-line"></use></svg><svg class="icon"><use xlink:href="#icon-creative-commons-sa-line"></use></svg></a> unless otherwise stated.</li></ul></section></article><div class="post-nav"><div class="post-nav-item"><a class="post-nav-prev" href="/2021/07/06/Android%20-%20ShadowsocksR%20%E5%B0%8F%E9%A3%9E%E6%9C%BA%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" rel="prev" title="Android - ShadowsocksR 小飞机使用教程"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-left-s-line"></use></svg><span class="post-nav-text">Android - ShadowsocksR 小飞机使用教程</span></a></div><div class="post-nav-item"><a class="post-nav-next" href="/2021/07/06/macOS%20-%20ClashX%20%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" rel="next" title="macOS - ClashX 使用教程"><span class="post-nav-text">macOS - ClashX 使用教程</span><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-right-s-line"></use></svg></a></div></div></div><div class="hty-card" id="comment"><div class="comment-tooltip text-center"><span>要不要和我说些什么？</span><br></div></div></main><footer class="sidebar-translate" id="footer"><div class="copyright"><span>&copy; 2019 – 2024 </span><span class="with-love" id="animate"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-cloud-line"></use></svg></span><span class="author"> uTon</span></div><div class="powered"><span>Powered by <a href="https://hexo.io" target="_blank" rel="noopener">Hexo</a> v5.4.0</span><span class="footer-separator">|</span><span>Theme - <a rel="noopener" href="https://github.com/YunYouJun/hexo-theme-yun" target="_blank"><span>Yun</span></a> v1.6.1</span></div></footer><a class="hty-icon-button" id="back-to-top" aria-label="back-to-top" href="#"><svg class="icon" aria-hidden="true"><use xlink:href="#icon-arrow-up-s-line"></use></svg><svg class="progress-circle-container" viewBox="0 0 100 100"><circle class="progress-circle" id="progressCircle" cx="50" cy="50" r="48" fill="none" stroke="#0078E7" stroke-width="2" stroke-linecap="round"></circle></svg></a></div></body></html>
